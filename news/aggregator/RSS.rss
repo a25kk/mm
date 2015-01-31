@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:syn="http://purl.org/rss/1.0/modules/syndication/"
+         xmlns="http://purl.org/rss/1.0/">
+
+
+
+
+    
+
+
+
+<channel rdf:about="http://mightymonsters.de/news/aggregator/RSS">
+  <title>News</title>
+  <link>http://mightymonsters.de</link>
+  
+  <description>
+    
+       Site News
+       
+  </description>
+  
+  
+  
+            <syn:updatePeriod>daily</syn:updatePeriod>
+            <syn:updateFrequency>1</syn:updateFrequency>
+            <syn:updateBase>2009-07-06T18:06:15Z</syn:updateBase>
+        
+  
+  <image rdf:resource="http://mightymonsters.de/logo.jpg"/>
+
+  <items>
+    <rdf:Seq>
+        
+            <rdf:li rdf:resource="http://mightymonsters.de/news/monsterevent-boss-der-hasen-in-augsburg"/>
+        
+        
+            <rdf:li rdf:resource="http://mightymonsters.de/news/mighty-monsters-bei-den-iam6-projektpraesentationen"/>
+        
+    </rdf:Seq>
+  </items>
+
+</channel>
+
+    <item rdf:about="http://mightymonsters.de/news/monsterevent-boss-der-hasen-in-augsburg">        <title>Monsterevent: Boss der Hasen in Augsburg</title>        <link>http://mightymonsters.de/news/monsterevent-boss-der-hasen-in-augsburg</link>        <description>Es häufen sich immer mehr Berichte, dass am 01. August der Boss der Hasenmonster in der Augsburger Innenstadt auf die Jagd geht. Es warten einzigartige Belohnungen auf den Spieler, der den Boss besiegt.</description>        <dc:publisher>No publisher</dc:publisher>        <dc:creator>student_1</dc:creator>        <dc:rights></dc:rights>                <dc:date>2009-07-29T09:18:37Z</dc:date>        <dc:type>Nachricht</dc:type>    </item>
+    <item rdf:about="http://mightymonsters.de/news/mighty-monsters-bei-den-iam6-projektpraesentationen">        <title>Mighty Monsters bei den IAM6-Projektpräsentationen</title>        <link>http://mightymonsters.de/news/mighty-monsters-bei-den-iam6-projektpraesentationen</link>        <description>Am 29. Juli finden an der Hochschule Augsburg die Projektpräsentationen statt. An diesem Abend wird auch Mighty Monsters zum ersten Mal der Öffentlichkeit vorgestellt.</description>        <dc:publisher>No publisher</dc:publisher>        <dc:creator>student_1</dc:creator>        <dc:rights></dc:rights>                <dc:date>2009-07-29T09:21:28Z</dc:date>        <dc:type>Nachricht</dc:type>    </item>
+
+
+
+
+</rdf:RDF>

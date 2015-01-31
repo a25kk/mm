@@ -1,0 +1,902 @@
+/* Stylesheet for the 'monsters' Plone theme */
+
+body {
+	background: url("++resource++kk.monsters.images/bg3.jpg") repeat 0px 0px transparent;
+} 
+
+a {
+	outline: none;
+}
+
+.flashFehler {
+	border: 0px solid red !important;
+	margin: 30px 30px 0px 400px;
+	font-size: 140%;
+	font-family: Georgia;
+	font-style: italic;
+	
+}
+
+hr { 
+	background-color: transparent;
+	border: 1px dotted #cccccc;
+	border-width: 0px 0px 1px 0px;
+	color: white;
+	height:1px;
+	margin:0.5em 0 1em;
+}
+
+.hiddenStructure {
+	background:transparent none repeat scroll 0;
+	border:medium none;
+	display:block;
+	height: 0px;
+	margin:-1px 0 0 -1px;
+	overflow:hidden;
+	padding:0;
+	width:1px;
+}
+
+.visualClear {
+	height: 0px !important;
+}
+
+#clear-space-before-portal-columns {
+	height: 0px !important;
+}
+
+.fieldRequired {
+	background:transparent url("http://mightymonsters.de/portal_css/monsters/++resource++kk.monsters.stylesheets/++resource++kk.davidov.images/required.gif") no-repeat scroll left center;
+	color:#76797C;
+	padding:0 0 0 8px;
+	font-family: Georgia;
+	font-style: italic;
+	font-size: 90%;
+}
+
+#visual-portal-wrapper {
+	border: 0px solid red;
+	background: transparent;
+}
+
+#visual-site-border {
+	margin: 0px auto 0px auto;
+	background: url("++resource++kk.monsters.images/site3.png") no-repeat transparent;
+	background-position: center top;
+	overflow:visible;
+	padding: 0px 0px 0px 0px;
+	border: 0px;
+}
+
+#visual-site-wrapper {
+	margin: 0px auto 0px auto;
+	width: 1000px;
+	background: transparent;
+	z-index: 100;
+}
+
+#portal-top {
+	background: transparent;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+}
+
+#portal-header {
+	background: transparent;
+}
+
+/***** portal-siteactions *****/ 
+
+#portal-siteactions {
+	background-color: transparent;
+	float: left;
+	line-height: normal;
+	list-style-image: none;
+	list-style-type: none;
+	margin: 13px 0px 0px 10px;
+	padding: 0px;
+	white-space: nowrap;
+	border: 0px solid black;
+	text-transform: none;
+	font-family: Georgia;
+	font-style: italic;
+	font-size: 100%;
+	font-weight: normal;
+}
+
+#portal-siteactions li a:link {
+	background: url("http://mightymonsters.de/portal_css/monsters/++resource++kk.monsters.stylesheets/++resource++kk.davidov/bg_siteactions.gif") no-repeat scroll top right transparent;
+	border: 0px;
+	color: white;
+	margin-right: 0.2em;
+	padding: 0px 5px 0px 0px;
+	text-decoration:none;
+	text-transform: none;
+}
+
+#portal-siteactions li a:visited {
+	background: url("http://mightymonsters.de/portal_css/monsters/++resource++kk.monsters.stylesheets/++resource++kk.davidov.images/bg_siteactions.gif") no-repeat scroll top right transparent;
+	border: 0px;
+	color: white;
+	margin-right: 0.2em;
+	padding: 0px 5px 0px 0px;
+	text-decoration:none;
+	text-transform: none;
+}
+
+#portal-siteactions li a:hover {
+	background: url("http://mightymonsters.de/portal_css/monsters/++resource++kk.monsters.stylesheets/++resource++kk.davidov.images/bg_siteactions.gif") no-repeat scroll top right transparent;
+	border: 0px;
+	color: white;
+	margin-right: 0.2em;
+	padding: 0px 5px 0px 0px;
+	text-decoration:none;
+	text-transform: none;
+}
+
+#portal-siteactions #siteaction-sendto a {
+	background: transparent;
+	border: 0px;
+}
+
+#portal-logo {
+	margin: 0px 75px 0px 0px;
+	padding: 0px;                               
+	width: 333px;
+	height: 214px;
+	float: right;
+}
+
+#portal-logo a {
+	width: 333px;
+	height: 214px;
+	padding: 0px;
+	margin: 0px;
+}
+
+#portal-logo img {
+	width: 333px;
+	height: 214px;
+	padding: 0px;
+	margin: 0px 0px 0px 45px;
+}
+
+/***** end of global-actions *****/
+
+#global-languageselector {
+	display: none;
+}
+
+.portlet-search-gadget {
+	border: 1px dotted #e58610 !important;
+	padding: 10px;
+	background: #333333;
+}
+
+.portlet-search-gadget input { 
+	color: white
+}
+
+.portletSearch .portletFooter {
+	display: none;
+}
+
+input.searchButton {
+	background: transparent;
+	border: 1px dotted #e58610 !important;
+	color: #e58610;
+	cursor: pointer;
+	font-size: 100%;
+	margin-bottom: 0px !important;
+	padding: 9px 20px 9px 20px;
+	text-transform: none;
+	font-family: Georgia;
+	font-style: italic;
+}
+
+.dline {
+	background: url("http://mightymonsters.de/portal_css/monsters/++resource++kk.monsters.stylesheets/++resource++kk.davidov.images/dotted.gif") repeat-x 0px 0px transparent;
+}
+
+#portal-breadcrumbs {
+	display: none;
+}
+
+
+#visual-column-wrapper {
+	float: left;
+	margin-right: -<dtml-var columnTwoWidth missing="16em">;
+	background: transparent; 
+}
+
+#portal-columns {
+	width: 950px !important;
+	border: 0px solid red;
+	margin: 50px 0px 0px 0px;
+	padding: 0px 0px 0px 0px !important;
+	background: transparent url("++resource++kk.monsters.images/content_bg.png") no-repeat 174px 390px !important;
+}
+
+#portal-column-one {
+	float: left;
+	width: 200px;
+	overflow: hidden;
+	margin: 0px 0px 0px 0px;
+	background: transparent !important;
+	border: 0px solid blue;
+}
+
+#portal-column-two, #portal-column-content {
+  background: transparent;
+}
+
+#portal-column-two {
+	display: none;
+}
+
+#portal-column-content {
+	float: left;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 30px !important;
+	width: 575px;
+	border: 0px solid black;
+}
+
+#portal-column-content .visualPadding {
+	padding: 0px !important;
+	margin: 0px;
+}
+
+#portal-column-one .visualPadding {
+	padding: 0px 0px 0px 20px !important;
+}
+
+#portal-column-two .visualPadding {
+	padding: 18px 0px 0px 0px !important;
+}
+
+/***** NAVIGATION *********************************/
+
+#portal-globalnav {
+	font-family: Lucida Grande;
+	font-style: bold;
+	background: transparent;
+	padding: 0px 0px 0px 140px !important;
+	margin: 285px 0px 0px 0px;
+	border: 0px solid red;
+	text-align: center;
+}
+
+#portal-globalnav ul {
+	list-style: none;
+	list-style-image: none;
+	background: transparent;
+}
+
+#portal-globalnav li {
+	background: url("++resource++kk.monsters.images/tab.gif.jpeg") no-repeat 0px 0px transparent;
+	margin: 0px 0px 0px 0px !important; 
+	padding: 15px 30px 20px 30px !important;
+	font-style: bold;
+	border: 0px solid red;
+}
+
+#portal-globalnav li a {
+	background: transparent;
+	border: 0px solid red !important;
+	color: white;
+	margin: 0px 0px 0px 0px !important;
+	padding: 0px 0px 0px 0px !important;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: none;
+}
+
+#portal-globalnav li.selected a {
+	background: transparent !important;
+	color: #e58610 !important;
+	border: 0px solid red;
+	margin: 0px 0px 0px 0px !important;
+	padding: 0px 0px 0px 0px !important;
+}
+
+#portal-globalnav li a:hover {
+	background: transparent !important;
+	opacity: 0,1;
+	color: #e58610 !important;
+	border: 0px solid red;
+	margin: 0px 0px 0px 0px !important;
+	padding: 0px 0px 0px 0px !important;
+} 
+
+
+/*** content definitionen ***************************************/ 
+
+
+
+legend {
+	background: transparent none repeat scroll 0 0;
+	font-size:90%;
+	padding:0.5em;
+}
+
+fieldset {
+	border: 1px dotted #8CACBB;
+	line-height:1.5em;
+	margin:1em 0;
+	padding:0 1em 1em;
+	width:auto;
+}
+
+.fieldRequired {
+	background:transparent url("http://mightymonsters.de/portal_css/monsters/++resource++kk.monsters.stylesheets/++resource++kk.chris.images/required.gif") no-repeat scroll left center;
+	color:#76797C;
+	font-family:Georgia;
+	font-size:90%;
+	font-style:italic;
+	padding:0 0 0 8px;
+}
+
+table.plain {
+	border: 0px;
+	border-collapse: separate;
+	width: 100%;
+}
+
+table.plain td, table.plain th {
+	border: 1px dotted #663300;
+	border-collapse: separate;
+	padding: 10px;
+	vertical-align: top;
+}
+
+table.plain th {
+	color: #e58610;
+	font-size: 120%;
+	text-align: left;
+	font-family: Georgia;
+	font-style: italic;
+}
+
+.context, .formControls .actionButtons .button, .documentEditable * .context {
+	background: transparent;
+	border: 1px dotted #cccccc;
+	color:  #e58610;
+	cursor: pointer;
+	font-size: 100%;
+	padding: 10px 10px 10px 10px;
+	text-transform: none;
+	font-family: Georgia;
+	font-style: italic;
+}
+
+.standalone, .documentEditable * .standalone { 
+	background: transparent;
+	border: 1px dotted #cccccc;
+	color:  #e58610;
+	cursor: pointer;
+	font-size: 100%;
+	padding: 10px 10px 10px 10px;
+	text-transform: none;
+	font-family: Georgia;
+	font-style: italic;
+} 
+
+.documentEditable {
+	border: 0px solid red;
+	z-index: 500;
+}
+
+.contentViews {
+	z-index: 30 !important;
+	position: relative;
+}
+
+.georgia {
+	font-family: Georgia;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 110%;
+}
+
+.georgiaBold {
+	font-family: Georgia;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 110%;
+}
+
+#parent-fieldname-title span {
+	text-transform: none;
+}
+
+#region-content {
+	border: 0px solid black;
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
+.discreet {
+	font-family: Georgia;
+	font-style: italic;
+}
+
+#content a[href^="http:"], 
+#content a.link-external {
+	background: transparent;
+	padding: 0px;
+	font-family: Georgia;
+	font-style: italic;
+}
+
+#content a[href^="mailto:"], 
+#content a.link-mailto {
+	background: transparent;
+	padding: 0px;
+	font-family: Georgia;
+	font-style: italic;
+}
+
+.documentActions {
+	border: 0px solid black;
+	padding: 0px !important;
+	margin: -4px 0px 0px 0px;
+	font-family: Georgia;
+	font-style: italic; 
+}
+
+#content {
+	margin: 0px auto 0px auto !important;
+	padding: 0px 0px 0px 60px !important;
+	border: 0px solid red;
+	background: transparent;
+	color: white;
+	font-size: 110%;
+}
+
+.kupu {
+	color: black !important;
+}
+
+.documentContent {
+	margin: 0px !important;
+	padding: 0px 0px 0px 0px !important;
+	background: transparent;
+}
+
+.documentContent ul {
+	list-style-type: none;
+	list-style-image: none;
+	margin: 10px 10px 10px 0px;
+}
+
+.documentContent li {
+	background: url("++resource++kk.monsters.images/bullet.gif") no-repeat 0px 7px transparent;
+	padding: 7px 0px 0px 15px;
+	margin: 0px 0px 5px 0px;
+}
+
+.documentContent a:link {
+	border: 0px !important;
+	text-decoration:none;
+	font-family: Lucida Grande;
+	font-style: italic;
+}
+
+.documentContent a:visited {
+	border: 0px !important;
+	text-decoration:none;
+	font-family: Lucida Grande;
+	font-style: italic;
+}
+
+.documentContent a:hover {
+	border: 0px !important;
+	text-decoration: none;
+	font-family: Lucida Grande;
+	font-style: italic;
+}
+
+.documentByLine {
+	margin: 0px 0px 20px 0px;
+}
+
+.documentAuthor {
+	display: none;
+} 
+
+.link-external {
+	border: 0px !important;
+	background: transparent;
+	padding: 0px;
+	margin: 0px;
+}
+
+.link-external a:link {
+	border: 0px !important;
+	text-decoration: none;
+	background: transparent;
+}
+
+.link-external a:visited {
+	border: 0px !important;
+	text-decoration: none;
+	background: transparent;
+}
+
+.link-external a:hover {
+	border: 0px !important;
+	text-decoration: none;
+	background: transparent;
+}
+
+.link-mailto {
+	background: transparent;
+	padding: 0px;
+}
+
+h1 {
+	border: 0px !important;
+	font-size: 120%;
+	padding: 10px 0px 10px 0px;
+	font-weight: bold;
+	font-family: Lucida Grande;
+}
+
+h2, h3 {
+	color: #fff;
+	border: 0px !important;
+	font-size: 140%;
+	padding: 10px 0px 10px 0px;
+	font-weight: bold;
+	font-family: Lucida Grande;
+	font-style: italic;	 
+}
+
+.tileItem {
+	border: 0px dotted #798c94;
+	border-width: 0px 0px 1px 0px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 20px 0px; 
+}
+
+.tileItem .tileHeadline {
+	padding: 0px 0px 0px 0px !important;
+	border: 0px solid black !important;
+	text-transform: none;
+	color: #e58610;
+	font-family: Lucida Grande;
+}
+
+.tileHeadline a:link {
+	color: #e58610 !important;	
+}
+
+.tileHeadline a:visited {
+	color: #e58610 !important;	
+}
+
+.tileHeadline a:hover {
+	color: #e58610 !important;	
+}
+
+.tileItem .documentByLine {
+	display: none;
+}
+
+.tileFooter {
+	text-align: right;
+	background: transparent;
+	padding: 10px 10px 15px 0px;
+}
+
+.documentFirstHeading {
+	background: transparent;
+	border: 0px solid red;
+	color: #e58610;
+	font-size: 230%;
+	font-weight: normal;
+	margin: 0px 0px 0px 0px;
+	text-align: left;
+	padding: 0px 0px 0px 0px;
+	text-transform: none;
+	font-family: Lucida Grande;
+	font-style: normal;
+}
+
+
+.documentDescription {
+	padding: 10px 0px 10px 0px;
+	font-family: Lucida Grande;
+	font-style: italic;
+	font-weight: bold;
+	color: #fff;
+	font-size:110%;
+}
+
+.documentModified {
+	font-family: Lucida Grande;
+	font-style: italic;	
+}
+
+.tileFooter a:link {
+	border: 0px !important;
+}
+
+.tileFooter a:visited {
+	border: 0px !important;
+}
+
+.tileFooter a:hover {
+	border: 0px !important;
+	text-decoration: underline;
+}
+
+.section-referenzen .link-parent {
+	display: none;
+}
+
+.listingBar {
+	background: transparent !important;
+	border: 1px dotted #e58610;
+	clear: both;
+	font-size: 94%;
+	margin: 1em 0;
+	padding: 10px;
+	text-align: center;
+	text-transform: lowercase;
+	vertical-align: top;
+}
+
+#slideshow-wrapper {
+	padding: 0px !important;
+	margin: 0px; 
+	text-align: left;
+}
+
+.slideshowfolder-thumbnails {
+	bottom: -100px;
+	height: 100px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	margin: 20px 0px 0px 0px !important;
+}
+
+.slideshowfolder-thumbnails li {
+	background: transparent;
+	padding: 0px;
+}
+
+.slideshowfolder-captions {
+	-x-system-font: none;
+	background: #000000 none repeat scroll 0 0;
+	bottom: 0;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-size-adjust: none;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	left: 0;
+	line-height: 22px;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	z-index: 10000;
+}
+
+.slideshowfolder-captions-text {
+	font-family: Lucida Grande;
+	font-style: italic;
+	margin: 10px 0px 10px 20px;
+	padding: 0px 0px 0px 10px !important;
+	background: url("http://mightymonsters.de/portal_css/monsters/++resource++kk.monsters.stylesheets/++resource++kk.davidov.images/grey_arrow.gif") no-repeat 0px 7px transparent;	
+}
+
+.image-left {
+	border: 0px !important;
+	padding: 0px 0px 0px 0px;
+}
+
+.tileItem .image-left {
+	border: 0px !important;
+	padding: 2px 0px 0px 0px;
+}
+
+.visualIEFloatFix {
+    height: 0.1%;
+}
+
+.listingWrapper {
+	border: 0px solid red;
+}
+
+.listingImage {
+	float: left;
+	margin: 3px 20px 20px 0px;
+}
+
+.listingImage img {
+	width: 83px !important;
+	height: 83px !important;
+}
+
+.listingItem {
+	border: 0px solid black;
+	float: right;
+	width: 80%;
+	text-align: top;
+	padding: 0px;
+	margin: 0px;
+}
+
+.listingItem .tileHeadline {
+	border: 1px solid black;
+	text-align: top;
+	padding: 0px;
+	margin: 0px 0px 10px 0px;
+}
+
+.autoFlowPlayer {
+	border: 0 none;
+	display: block;
+	height: 250px;
+	width: 251px;
+}
+
+.autoFlowPlayer.audio {
+	border:0 none;
+	display:block;
+	height: 189px;
+	width: 251px;
+	border: 0px solid red;
+	padding: 0px;
+	margin: 0px;
+}
+
+.newsImage {
+	border: 0px solid #CCCCCC;
+}
+
+.template-accessibility-info a {
+	font-family: Georgia;
+	font-style: italic;
+}
+
+.template-accessibility-info ul {
+	font-family: Georgia;
+	font-style: italic;
+}
+
+#category {
+   	font-family: Georgia;
+	font-style: italic; 
+}
+
+#content .link-category {
+	color: #0099cc !important;
+}
+
+form.searchPage {
+	text-align: left;
+	border: 0px solid black;
+	margin: 450px 0px 0px 0px;
+}
+
+form.searchPage input.searchButton {
+	background: white;
+	padding: 7px;
+	border: 0px;
+	margin: 0px !important;
+	font-size: 100% !important;
+}
+
+form.searchPage .discreet {
+	display: none;
+}
+
+input.searchPage {
+	font-size: 200% !important;
+	margin: 0px 0px 0px 0px;
+}
+
+.photoAlbumEntry {
+	background: transparent;
+	background-repeat:no-repeat;
+	float:left;
+	margin: -16px 0px 0px 0px;
+	overflow:hidden;
+	padding: 2px;
+	position:relative;
+	text-align:center;
+	border: 0px dotted #ccc;
+}
+
+.photoAlbumEntry a {
+	display:block;
+	font-size:85%;
+	height:169px;
+	margin: 16px auto 0;
+	text-decoration:none;
+	width:130px;
+	border: 1px dotted #ccc !important;
+}
+
+/******************* footer *************************************/
+
+#portal-footer {
+	background: url("++resource++kk.monsters.images/footer2.png") no-repeat 0px 0px transparent;
+	overflow: visible;
+	margin: -50px 0px 0px -1px;
+	border: 0px solid #cccccc;
+	text-align: center;
+	display: block;
+	padding: 0px 0px 160px 0px;
+	font-family: Lucida Grande;
+	font-style: normal;
+	color: white;
+}
+
+.footer-wrapper {
+	border: 0px dotted #333333;
+	margin: 0px auto 0px auto;
+	padding: 140px 0px 0px 0px;
+	background: transparent;
+	width: 1000px;
+	font-size: 100%;
+}
+
+#portal-footer a:link {
+	color: #e58610;
+	font-size: 100%;
+	text-decoration: none;
+}
+
+#portal-footer a:visited {
+	color: #e58610;
+	font-size: 100%; 
+	text-decoration: none;
+}
+
+#portal-footer a:hover {
+	color: #e58610;
+	font-size: 100%;
+	text-decoration: underline;
+}
+
+#portal-colophon {
+	text-align: right;
+	font-family: Georgia;
+	font-style: italic;
+	border: 0px solid white;
+	background: transparent;
+	margin: 0px auto 0px auto;
+	padding: 0px 0px 0px 0px;
+	width: 1000px;
+	text-align: center;
+	height: 18px;
+}
+
+#portal-colophon a:link {
+	color: white;
+	font-size: 120%;
+	text-decoration: none;
+	border: 0px;
+}
+
+#portal-colophon a:visited {
+	color: white;
+	font-size: 120%; 
+	text-decoration: none;
+	border: 0px;
+}
+
+#portal-colophon a:hover {
+	color: white;
+	font-size: 120%;
+	text-decoration: none;
+	border: 0px;
+}

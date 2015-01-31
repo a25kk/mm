@@ -1,0 +1,926 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de-de"
+      lang="de-de">
+
+  
+    
+    
+    
+    
+    
+
+  
+
+  <head>
+
+    <meta http-equiv="Content-Type"
+          content="text/html;charset=utf-8" />
+
+    
+      <!--<base href="http://mightymonsters.de/das-spiel/spielelogik/spielelogik/" />--><!--[if lt IE 7]></base><![endif]-->
+    
+
+    <meta name="generator" content="Plone - http://plone.org" />
+
+    <link rel="kss-base-url" href="../spielelogik.html" />
+
+  
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url("../../../portal_css/monsters/base.css");</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url("../../../portal_css/monsters/public.css");</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url("../../../portal_css/monsters/columns.css");</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url("../../../portal_css/monsters/authoring.css");</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url("../../../portal_css/monsters/portlets.css");</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url("../../../portal_css/monsters/controlpanel.css");</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="print">@import url("../../../portal_css/monsters/print.css");</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url("../../../portal_css/monsters/deprecated.css");</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url("../../../portal_css/monsters/navtree.css");</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url("../../../portal_css/monsters/invisibles.css");</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url("../../../portal_css/monsters/forms.css");</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url("../../../portal_css/monsters/ploneKss.css");</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url("../../../portal_css/monsters/++resource++plone.app.jquerytools.overlays.css");</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url("../../../portal_css/monsters/++resource++collective.flowplayer.css/flowplayer.css");</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url("../../../portal_css/monsters/++resource++collective.flowplayer.css/flowplayer-horizontal.css");</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url("../../../portal_css/monsters/++resource++kk.monsters.stylesheets/main.css");</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="all">@import url("../../../portal_css/monsters/ploneCustom.css");</style>
+    
+    
+    
+  
+
+
+  
+  
+    
+    
+      <script type="text/javascript"
+              src="../../../portal_javascripts/monsters/jquery-cachekey3372.js">
+      </script>
+    
+    
+    
+  
+
+  
+    
+    
+      <script type="text/javascript"
+              src="../../../portal_javascripts/monsters/dropdown-cachekey9375.js">
+      </script>
+    
+    
+    
+  
+
+  
+    
+    
+      <script type="text/javascript"
+              src="../../../portal_javascripts/monsters/sarissa-cachekey9238.js">
+      </script>
+    
+    
+    
+  
+
+  
+    
+    
+      <script type="text/javascript"
+              src="../../../portal_javascripts/monsters/resourcebase2-dom-fp-cachekey6928.js">
+      </script>
+    
+    
+    
+  
+
+  
+    
+    
+      <script type="text/javascript"
+              src="../../../portal_javascripts/monsters/resourcekukit-cachekey4206.js">
+      </script>
+    
+    
+    
+  
+
+  
+    
+    
+      <script type="text/javascript"
+              src="../../../portal_javascripts/monsters/resourcekukit-devel-cachekey6642.js">
+      </script>
+    
+    
+    
+  
+
+  
+    
+    
+      <script type="text/javascript"
+              src="../../../portal_javascripts/monsters/kupunoi18n-cachekey5496.js">
+      </script>
+    
+    
+    
+  
+
+  
+    
+    
+      <script type="text/javascript"
+              src="../../../portal_javascripts/monsters/resourcecollective.flowplayerflowplayer.min-cachekey2601.js">
+      </script>
+    
+    
+    
+  
+
+
+  
+  <link rel="kinetic-stylesheet" type="text/css"
+        href="../../../portal_kss/monsters/at-cachekey6012.kss" />
+
+
+
+<title>Spielregeln &mdash; Mighty Monsters | A location based game</title>
+
+						<!-- Internet Explorer CSS Fixes -->
+
+						<!--[if lt IE 8]>
+
+						<style type="text/css" media="all">@import url(http://mightymonsters.de/IEFixes.css);</style>
+
+						<![endif]-->
+
+					    
+
+    <link rel="shortcut icon" type="image/x-icon"
+          href="../../../favicon.ico" />
+
+
+
+    <link rel="home" href="../../../index.html"
+          title="Startseite" />
+
+    <link rel="contents"
+          href="../../../sitemap.html"
+          title="Übersicht" />
+
+
+
+
+
+
+    <link rel="search"
+          href="../../../search_form.html"
+          title="Search this site" />
+
+
+					
+    <!-- Disable IE6 image toolbar -->
+    <meta http-equiv="imagetoolbar" content="no" />
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+  </head>
+
+  <body class="section-das-spiel template-richdocument_view"
+        dir="ltr">
+					    <div id="visual-portal-wrapper">
+						<div id="visual-site-border">
+					    <div id="visual-site-wrapper">
+	
+
+      <div id="portal-top">
+        <div id="portal-header">
+<p class="hiddenStructure">
+  <a accesskey="2"
+     href="index-month_int=4&year_int=2014&orig_query=.html#documentContent">Direkt zum Inhalt</a> |
+
+  <a accesskey="6"
+     href="index-month_int=4&year_int=2014&orig_query=.html#portlet-navigation-tree">Direkt zur Navigation</a>
+</p>
+
+<a id="portal-logo" accesskey="1"
+   href="../../../index.html">
+    <img src="../../../logo.jpg.png" alt="" title="" height="214" width="333" /></a>
+
+
+    <h5 class="hiddenStructure">Sektionen</h5>
+
+    <ul id="portal-globalnav">
+        <li id="portaltab-index_html" class="plain"><a
+    href="../../../index.html" title="">Startseite</a></li>
+        <li id="portaltab-das-spiel" class="selected"><a
+    href="../../../das-spiel.html" title="">Das Spiel</a></li>
+        <li id="portaltab-anleitung" class="plain"><a
+    href="../../../anleitung.html" title="">Anleitung</a></li>
+        <li id="portaltab-uber-uns" class="plain"><a
+    href="../../../uber-uns.html"
+    title="Das Entwicklerteam und Sponsoren von Mighty Monsters.">Über Uns</a></li>
+    </ul>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US"
+      lang="en-US">
+
+    <body>
+		<div id="flash">  
+			<script type="text/javascript">
+var so = new SWFObject("header.swf", "header", "900", "265", "9", "#000000");
+so.write("flash");
+</script>
+			</div>
+    </body>
+</html>
+
+</div>
+
+
+    
+
+
+<div id="portal-breadcrumbs">
+
+    <span id="breadcrumbs-you-are-here">Sie sind hier:</span>
+    <a href="../../../index.html">Startseite</a>
+    <span class="breadcrumbSeparator">
+        &rarr;
+        
+    </span>
+    <span dir="ltr">
+        
+            <a href="../../../das-spiel.html">Das Spiel</a>
+            <span class="breadcrumbSeparator">
+                &rarr;
+                
+            </span>
+            
+         
+    </span>
+    <span dir="ltr">
+        
+            
+            
+            <span>Spielregeln</span>
+         
+    </span>
+
+</div>
+
+      </div> 
+		               
+
+      <div class="visualClear" id="clear-space-before-wrapper-table"><!-- --></div>
+
+      <table id="portal-columns">
+        <tbody>
+          <tr>
+            
+            <td id="portal-column-one">
+              <div class="visualPadding">
+                
+                  
+<div id="portletwrapper-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f6d6f6e73746572730a6e617669676174696f6e"
+     class="portletWrapper kssattr-portlethash-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f6d6f6e73746572730a6e617669676174696f6e">
+	<dl class="portlet portletNavigationTree">
+	
+		<dt class="portletHeader">
+			<span class="portletTopLeft"></span>
+			<a href="../../sitemap.html"
+      class="tile">Navigation</a>
+		   
+			<span class="portletTopRight"></span>
+		</dt>
+	
+		<dd class="portletItem lastItem">
+			<ul class="navTree navTreeLevel0">
+				
+				
+	
+	
+	
+	<li class="navTreeItem visualNoMarker navTreeFolderish">
+	
+		
+	
+		  <div>
+	
+			<a href="../../geschichte.html"
+      class="state-published navTreeFolderish" title="">
+				<img width="16" height="16" src="../../../folder_icon.gif" alt="Folder" />
+				<span>Geschichte</span>
+			</a>
+		   
+		</div>
+	
+		
+		
+	</li>
+	
+	
+	<li class="navTreeItem visualNoMarker navTreeFolderish">
+	
+		
+	
+		  <div>
+	
+			<a href="../../charaktere.html"
+      class="state-published navTreeFolderish" title="">
+				<img width="16" height="16" src="../../../folder_icon.gif" alt="Folder" />
+				<span>Charaktere</span>
+			</a>
+		   
+		</div>
+	
+		
+		
+	</li>
+	
+	
+	<li class="navTreeItem visualNoMarker selected navTreeFolderish">
+	
+		
+	
+		  <div>
+	
+			<a href="../../spielelogik.html"
+      class="state-published navTreeCurrentItem selected navTreeFolderish"
+      title="">
+				<img width="16" height="16" src="../../../folder_icon.gif" alt="Folder" />
+				<span>Spielregeln</span>
+			</a>
+		   
+		</div>
+	
+		
+		
+	</li>
+	
+	
+	
+
+			</ul>
+	   
+		</dd><dd class="portletFooter"></dd>
+	</dl>
+	
+</div>
+
+<div id="portletwrapper-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f6d6f6e73746572730a6e657773"
+     class="portletWrapper kssattr-portlethash-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f6d6f6e73746572730a6e657773"><dl class="portlet portletNews"
+    xmlns="http://www.w3.org/1999/xhtml">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <a href="../../../news.html" class="tile">Nachrichten</a>
+        <span class="portletTopRight"></span>
+    </dt>
+
+    
+    <dd class="portletItem odd">
+
+        <a href="../../../news/monsterevent-boss-der-hasen-in-augsburg.html"
+           class="tile"
+           title="Es häufen sich immer mehr Berichte, dass am 01. August der Boss der Hasenmonster in der Augsburger Innenstadt auf die Jagd geht. Es warten einzigartige Belohnungen auf den Spieler, der den Boss besiegt.">
+            <img width="16" height="16" src="../../../newsitem_icon.gif" alt="News Item" />
+            Monsterevent: Boss der Hasen in Augsburg
+            <span class="portletItemDetails">09.07.2009</span>
+        </a>
+    </dd>
+    
+    
+    <dd class="portletItem even">
+
+        <a href="../../../news/mighty-monsters-bei-den-iam6-projektpraesentationen.html"
+           class="tile"
+           title="Am 29. Juli finden an der Hochschule Augsburg die Projektpräsentationen statt. An diesem Abend wird auch Mighty Monsters zum ersten Mal der Öffentlichkeit vorgestellt.">
+            <img width="16" height="16" src="../../../newsitem_icon.gif" alt="News Item" />
+            Mighty Monsters bei den IAM6-Projektpräsentationen
+            <span class="portletItemDetails">08.07.2009</span>
+        </a>
+    </dd>
+    
+
+    <dd class="portletFooter">
+        <span class="portletBottomLeft"></span>
+        <a href="../../../news.html">Weitere Nachrichten…</a>
+        <span class="portletBottomRight"></span>
+    </dd>
+    
+</dl>
+</div>
+
+
+
+
+                
+                &nbsp;
+              </div>
+            </td>
+            
+
+            
+            <td id="portal-column-content">
+
+              
+                <div class="">
+
+                  
+
+
+                  <div id="region-content" class="documentContent">
+
+                    <span id="contentTopLeft"></span>
+                    <span id="contentTopRight"></span>
+                    
+                    <a name="documentContent"></a>
+
+                    
+
+    <dl class="portalMessage info" id="kssPortalMessage" style="display:none">
+        <dt>Info</dt>
+        <dd></dd>
+    </dl>
+
+
+                    
+                    <div id="viewlet-above-content"></div>
+
+                    
+                    
+                    <div id="content">
+                      
+                      
+    
+           
+        
+
+        <h1 class="documentFirstHeading">
+            
+        <span class="" id="parent-fieldname-title">
+            Spielregeln
+        </span>
+    
+        </h1>
+
+        <div class="documentByLine" id="plone-document-byline">
+
+  
+
+  
+
+  
+
+  
+
+</div>
+
+
+
+
+        <div class="documentDescription">
+            
+        <span class="" id="parent-fieldname-description">
+            
+        </span>
+    
+        </div>
+
+        
+
+
+
+        
+
+        <div>
+            
+        <div class="" id="parent-fieldname-text">
+            
+<h2>Nur das mächtigste Monster gewinnt</h2>
+<p>Als Spieler begegnet man mit seinem Avatar ständig anderen Monstern. Wenn man diese Begegnungen erfolgreich überstehen will, braucht man das mächtigste Monster von allen. Darum ist es wichtig sein Monster bei möglichst vielen Kämpfen zu trainieren und den höchsten Level (Stufe 10) zu erreichen.</p>
+<p>Damit die Begegnungen möglichst fair verlaufen, sorgt eine Interaktionsgrenze für gleichwertige Gegner. Die kämpfenden Monster unterscheiden sich so maximal in einem Level. Beispielsweise kann ein Stufe 9 Monster kein Stufe 4 Monster angreifen, sondern nur Stufe 8,9 und 10 Monster.</p>
+<h2>Die Wahl des Monsters</h2>
+<p>Jeder <a title="Charaktere" class="internal-link" href="../../charaktere/charaktere.html">Charakter</a> hat ein Hauptattribut. Diese wirken sich wesentlich auf das Kampfverhalten aus:</p>
+<ul>
+<li>Die Stärke-Monster haben Vorteile im Angriff durch die hohe Angriffskraft und Lebenpunkte.</li>
+<li>Mit wenig Lebenspunkten versehen sind die Intellekt-Monster sehr erfolgreich im Umgang mit Spezialkraft.</li>
+<li>Die wendigen Geschicklichkeits-Monster kämpfen meist mit einer Kombination aus offensiven Angriffen und Ausweichmanövern.</li></ul>
+<p>Die Ausweichboni</p>
+<h2>In einen Kampf verwickelt werden</h2>
+<p>Sobald die Spielerposition mit der Position eines gegnerischen Mosnters übereinstimmt beginnt der Kampf. Dabei hat der Spieler folgende Auswahlmöglichkeiten:</p>
+<ul>
+<li>1. Kämpfen</li>
+<li>2. Flüchten</li></ul>
+<p>Der Kampf beginnt sobald <strong>Kämpfen</strong> gewählt wurde. Möchte der Spieler jedoch nicht gegen das gegnerische Monster kämpfen, so muss <strong>Flüchten</strong> gewählt werden. Wobei eine 50% Chance besteht, die Flucht erfolgreich durchzuführen. Sollte dies nicht gelingen, gilt diese Begegnung als verlorenen Kampf.</p>
+<h2>Einen Kampf bestreiten</h2>
+<p>Im Falle eines Kampfes gibt es 3 Auswahlmöglichkeiten:</p>
+<ul>
+<li>1. Angriff</li>
+<li>2. Spezialangriff</li>
+<li>3. Ausweichen</li></ul>
+<p><strong>Angriff</strong> sorgt für einen Nahkampfangriff und verursacht Angriffskraftschaden.<br />
+<strong>Spezialkraft</strong> sorgt für einen Spezialangriff und verursacht Spezialkraftschaden.<br />
+<strong>Ausweichen</strong> versucht dem gegnerischen Angriff auszuweichen und aktiviert den Ausweichbonus des eigenen Monsters.</p>
+<h2>Sieg und Niederlage</h2>
+<p><strong>Siegreiche Kämpfe</strong> gewähren dem Spieler Erfahrungspunkte, die benötigt werden um einen Levelaufstieg zu erlangen. Ebenso steigt die Trefferwertung.<br />
+<strong>Verlorene Kämpfe</strong> führen zu einem Verlust von Erfahrungspunkten. Dafür steigt aber die Verteidigungwertung an.</p>
+<h2>Levelaufstieg und Skillpunktvergabe</h2>
+<p>Hat ein Monster das Erfahrungsmaximum für seine Stufe erreicht, wird Diese automatisch um 1 Stufe erhöht. Für jeden Level-Up bekommt der Spieler einen Attributpunkt, welcher durch eine beliebige Attributvergabe verteilt werden kann. Das Stufenmaximum liegt bei 10. Deshalb können höchstens 9 Attributpunkte vergeben werden. Bei der Verteilung sollte man sich überlegen, in welche Richtung das Monster sich spezialisiert. Wie sich die unterschiedlichen Werte verändern sieht man im folgenden Abschnitt.</p>
+<p><strong>Skillpunktvergabe</strong></p>
+<ul>
+<li>Stärke: +2 % Lebenspunkte, +4 % Angriffskraft</li>
+<li>Intellekt: +4 % Spezialkraft, +2 % Ausweichen</li>
+<li>Geschicklichkeit: +2 % Trefferwertung, +4 % Kritische Trefferwertung</li></ul>
+
+            
+        </div>
+    
+        </div>
+
+        <div class="visualClear"><!-- --></div>
+
+        
+
+    
+
+
+
+        
+
+    
+
+
+
+        <div class="relatedItems">
+    
+        
+            
+        
+    
+</div>
+        
+        
+
+<div class="visualClear"><!-- --></div>
+<div class="documentActions">
+    
+
+    <h5 class="hiddenStructure">Artikelaktionen</h5>
+
+    <ul>
+    
+        <li id="document-action-sendto">
+            <a href="sendto_form.html"
+               title="">Versenden</a>
+        </li>
+    
+    
+        <li id="document-action-print">
+            <a href="javascript:this.print();" title="">Drucken</a>
+        </li>
+    
+
+    </ul>
+    
+
+    
+
+</div>
+
+
+
+    
+
+                    </div>
+                    
+
+                    
+                    
+                      
+    
+
+
+
+
+                    
+                    
+
+                    <span id="contentBottomLeft"></span>
+                    <span id="contentBottomRight"></span>
+
+                  </div>
+
+                </div>
+
+              
+            </td>
+            
+
+            
+            <td id="portal-column-two">
+              <div class="visualPadding">
+                
+                  
+<div id="portletwrapper-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f6d6f6e73746572730a6e657773"
+     class="portletWrapper kssattr-portlethash-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f6d6f6e73746572730a6e657773"><dl class="portlet portletNews"
+    xmlns="http://www.w3.org/1999/xhtml">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <a href="../../../news.html" class="tile">Nachrichten</a>
+        <span class="portletTopRight"></span>
+    </dt>
+
+    
+    <dd class="portletItem odd">
+
+        <a href="../../../news/monsterevent-boss-der-hasen-in-augsburg.html"
+           class="tile"
+           title="Es häufen sich immer mehr Berichte, dass am 01. August der Boss der Hasenmonster in der Augsburger Innenstadt auf die Jagd geht. Es warten einzigartige Belohnungen auf den Spieler, der den Boss besiegt.">
+            <img width="16" height="16" src="../../../newsitem_icon.gif" alt="News Item" />
+            Monsterevent: Boss der Hasen in Augsburg
+            <span class="portletItemDetails">09.07.2009</span>
+        </a>
+    </dd>
+    
+    
+    <dd class="portletItem even">
+
+        <a href="../../../news/mighty-monsters-bei-den-iam6-projektpraesentationen.html"
+           class="tile"
+           title="Am 29. Juli finden an der Hochschule Augsburg die Projektpräsentationen statt. An diesem Abend wird auch Mighty Monsters zum ersten Mal der Öffentlichkeit vorgestellt.">
+            <img width="16" height="16" src="../../../newsitem_icon.gif" alt="News Item" />
+            Mighty Monsters bei den IAM6-Projektpräsentationen
+            <span class="portletItemDetails">08.07.2009</span>
+        </a>
+    </dd>
+    
+
+    <dd class="portletFooter">
+        <span class="portletBottomLeft"></span>
+        <a href="../../../news.html">Weitere Nachrichten…</a>
+        <span class="portletBottomRight"></span>
+    </dd>
+    
+</dl>
+</div>
+
+<div id="portletwrapper-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f6d6f6e73746572730a63616c656e646172"
+     class="portletWrapper kssattr-portlethash-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f6d6f6e73746572730a63616c656e646172"><dl class="portlet portletCalendar"
+    xmlns="http://www.w3.org/1999/xhtml">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <a href="index-month_int=3&year_int=2014&orig_query=.html"
+           rel="nofollow" title="Vorheriger Monat"
+           id="calendar-previous"
+           class="kssCalendarChange kssattr-year-2014 kssattr-month-3 calendarPrevious">&laquo;</a>
+
+        April 2014
+
+        <a href="index-month_int=5&year_int=2014&orig_query=.html"
+           rel="nofollow" title="Nächster Monat"
+           id="calendar-next"
+           class="kssCalendarChange kssattr-year-2014 kssattr-month-5 calendarNext">&raquo;</a>
+        <span class="portletTopRight"></span>
+    </dt>
+
+    <dd class="portletItem">
+        <table class="ploneCalendar" summary="Kalender">
+            <caption class="hiddenStructure">April</caption>
+            <thead>
+                <tr class="weekdays"><th scope="col">Mo</th><th
+    scope="col">Di</th><th scope="col">Mi</th><th
+    scope="col">Do</th><th scope="col">Fr</th><th
+    scope="col">Sa</th><th scope="col">So</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td>
+                </tr>
+                <tr><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td>
+                </tr>
+                <tr><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td>
+                </tr>
+                <tr><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td>
+                </tr>
+                <tr><td>28</td><td>29</td><td>30</td><td></td><td></td><td></td><td></td>
+                </tr>
+            </tbody>
+
+        </table>
+        <span class="portletBottomLeft"></span>
+        <span class="portletBottomRight"></span>
+    </dd>
+</dl>
+</div>
+
+
+
+
+                
+                &nbsp;
+              </div>
+            </td>
+            
+          </tr>
+        </tbody>
+      </table>
+      
+
+      <div class="visualClear" id="clear-space-before-footer"><!-- --></div>
+      
+      
+
+      
+
+        <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en">
+<body>
+<div id="portal-footer"> 
+	<div class="footer-wrapper">
+
+
+		&copy; Mighty Monsters 2009 | Powered by <a href="http://plone.org" target="_blank">Plone</a>
+
+</div>
+<div class="visualClear"><!-- --></div>
+</div>
+</body>
+</html>
+
+
+
+      
+
+      <div class="visualClear"><!-- --></div>
+    </div></div></div>
+<div id="kss-spinner"><img alt=""
+                           src="../../../spinner.gif" /></div>
+
+</body>
+</html>
+
